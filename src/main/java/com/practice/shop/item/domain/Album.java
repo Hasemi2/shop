@@ -1,4 +1,4 @@
-package com.practice.shop.domain.item;
+package com.practice.shop.item.domain;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;

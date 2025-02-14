@@ -1,4 +1,4 @@
-package com.practice.shop.domain.item;
+package com.practice.shop.item.domain;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
@@ -6,11 +6,12 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@DiscriminatorValue("M")
+@DiscriminatorValue("B")
 @Getter
 @Setter
-public class Movie extends Item {
+public class Book extends Item {
 
-  private String director;
-  private String actor;
+  private String author;
+  private String isbn;
+
 }

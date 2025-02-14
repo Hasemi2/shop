@@ -1,4 +1,4 @@
-package com.practice.shop.domain;
+package com.practice.shop.member.domain;
 
 import jakarta.persistence.Embeddable;
 import lombok.Getter;

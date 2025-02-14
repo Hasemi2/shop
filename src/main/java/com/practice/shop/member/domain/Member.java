@@ -1,5 +1,6 @@
-package com.practice.shop.domain;
+package com.practice.shop.member.domain;
 
+import com.practice.shop.order.domain.Order;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;

@@ -1,6 +1,6 @@
-package com.practice.shop.domain;
+package com.practice.shop.category.domain;
 
-import com.practice.shop.domain.item.Item;
+import com.practice.shop.item.domain.Item;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

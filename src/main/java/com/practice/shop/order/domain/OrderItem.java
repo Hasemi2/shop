@@ -1,7 +1,7 @@
-package com.practice.shop.domain;
+package com.practice.shop.order.domain;
 
 
-import com.practice.shop.domain.item.Item;
+import com.practice.shop.item.domain.Item;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -36,6 +36,24 @@ public class OrderItem {
 
   private int orderPrice; //주문 가격
   private int count;
+
+  public static OrderItem createOrderItem(Item item, int orderPrice, int count) {
+    OrderItem orderItem = new OrderItem();
+    orderItem.setItem(item);
+    orderItem.setOrderPrice(orderPrice);
+    orderItem.setCount(count);
+    item.removeStock(count);
+    return orderItem;
+  }
+
+
+  public void cancel() {
+    getItem().addStock(count);
+  }
+
+  public int getTotalPrice() {
+    return getOrderPrice() * getCount();
+  }
 
 }
 
