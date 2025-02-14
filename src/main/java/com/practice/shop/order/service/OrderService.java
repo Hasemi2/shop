@@ -12,8 +12,6 @@ import com.practice.shop.order.domain.OrderRepository;
 import com.practice.shop.order.domain.OrderSearch;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.aspectj.weaver.ast.Or;
-import org.hibernate.type.ListType;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
