@@ -1,5 +1,6 @@
 package com.practice.shop.delivery.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.practice.shop.member.domain.Address;
 import com.practice.shop.order.domain.Order;
 import jakarta.persistence.Column;
@@ -27,6 +28,7 @@ public class Delivery {
   @Column(name = "delivery_id")
   private Long id;
 
+  @JsonIgnore
   @OneToOne(mappedBy = "delivery", fetch = FetchType.LAZY)
   private Order order;
 
