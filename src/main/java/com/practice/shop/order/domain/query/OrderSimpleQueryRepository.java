@@ -1,5 +1,6 @@
-package com.practice.shop.order.domain;
+package com.practice.shop.order.domain.query;
 
+import com.practice.shop.order.domain.Order;
 import com.practice.shop.order.dto.SimpleOrderDto;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;

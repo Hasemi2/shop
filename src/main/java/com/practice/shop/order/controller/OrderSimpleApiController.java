@@ -2,7 +2,7 @@ package com.practice.shop.order.controller;
 
 import com.practice.shop.order.domain.Order;
 import com.practice.shop.order.domain.OrderRepository;
-import com.practice.shop.order.domain.OrderSimpleQueryRepository;
+import com.practice.shop.order.domain.query.OrderSimpleQueryRepository;
 import com.practice.shop.order.dto.SimpleOrderDto;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
